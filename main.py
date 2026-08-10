@@ -45,9 +45,46 @@ def tuple_unpacking_demo():
     print("Index of 88:", position)
 
 
+# Program 3: Tuple immutability and tuple methods
+# Tuples are immutable, so they cannot be changed after creation.
+
+def tuple_immutability_demo():
+    numbers = (10, 20, 30, 20)
+    print("Numbers:", numbers)
+
+    print("Count of 20:", numbers.count(20))
+    print("Index of 30:", numbers.index(30))
+
+    try:
+        numbers[0] = 99
+    except TypeError as error:
+        print("Tuple is immutable:", error)
+
+
+# Program 4: Converting between tuple and list
+# You can convert tuples to lists and back again.
+
+def tuple_conversion_demo():
+    days = ("Mon", "Tue", "Wed")
+    print("Original tuple:", days)
+
+    day_list = list(days)
+    day_list.append("Thu")
+    print("List after adding an item:", day_list)
+
+    updated_tuple = tuple(day_list)
+    print("Tuple after converting back:", updated_tuple)
+
+
 if __name__ == "__main__":
     print("=== Tuple Basic Demo ===")
     basic_tuple_demo()
     print()
     print("=== Tuple Unpacking Demo ===")
     tuple_unpacking_demo()
+    print()
+    print("=== Tuple Immutability Demo ===")
+    tuple_immutability_demo()
+    print()
+    print("=== Tuple Conversion Demo ===")
+    tuple_conversion_demo()

@@ -55,6 +55,35 @@ This repository contains simple Python examples demonstrating how to use tuples 
   - Merge dictionaries using unpacking operator `**`
   - Sort dictionary by keys and values
 
+## 🧩 Set Programs
+
+- [set.py](set.py): contains 5 beginner-friendly set programs:
+
+  **Program 1: Basic Set Creation**
+  - Create a set of items
+  - Understand that sets do not allow duplicate values
+  - Print the set and check its length
+
+  **Program 2: Adding and Removing Items**
+  - Add values using `add()`
+  - Remove items using `remove()`
+  - Explain how duplicate values are ignored automatically
+
+  **Program 3: Set Operations**
+  - Use union (`|`) to combine sets
+  - Use intersection (`&`) to find common elements
+  - Use difference (`-`) to find unique items
+  - Use symmetric difference (`^`) to compare sets
+
+  **Program 4: Membership and Iteration**
+  - Check whether an item exists in a set using `in`
+  - Iterate through all elements using a `for` loop
+
+  **Program 5: Removing Duplicates from a List**
+  - Convert a list into a set to remove duplicates
+  - Display both the original and unique values
+  - Sort the unique values using `sorted()`
+
 ## 🚀 Running the Scripts
 
 Run the tuple programs:
@@ -66,6 +95,11 @@ python3 main2.py
 Run the dictionary programs:
 ```bash
 python3 dict.py
+```
+
+Run the set programs:
+```bash
+python3 set.py
 ```
 
 You will see different examples printed to the console with explanatory output for each program.

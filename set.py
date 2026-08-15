@@ -95,14 +95,86 @@ def program_5_remove_duplicates():
     print()
 
 
+# Program 6: Set copy, clear, pop, and discard operations
+# These methods help us manage and manipulate sets in different ways.
+def program_6_advanced_operations():
+    # Original set
+    colors = {"red", "blue", "green", "yellow"}
+
+    print("Program 6: Advanced Set Operations")
+    print("Original colors set:", colors)
+
+    # Create a copy of the set (important for avoiding reference issues)
+    colors_copy = colors.copy()
+    print("Copied colors set:", colors_copy)
+
+    # Pop removes and returns an arbitrary item from the set
+    removed_item = colors_copy.pop()
+    print("Item removed by pop():", removed_item)
+    print("After pop():", colors_copy)
+
+    # Discard removes an item without raising error if not found
+    colors_copy.discard("blue")
+    print("After discard('blue'):", colors_copy)
+
+    # Try to discard an item that doesn't exist (no error)
+    colors_copy.discard("purple")
+    print("After discard('purple') - no error raised:", colors_copy)
+
+    # Clear empties the entire set
+    test_set = {"a", "b", "c"}
+    print("Before clear():", test_set)
+    test_set.clear()
+    print("After clear():", test_set)
+    print()
+
+
+# Program 7: Check subset, superset and find common elements between multiple sets
+# This program demonstrates relationships between sets and how to find common elements.
+def program_7_set_relationships():
+    # Define multiple sets
+    set1 = {1, 2, 3, 4, 5}
+    set2 = {2, 3, 4}
+    set3 = {3, 4, 5, 6, 7}
+
+    print("Program 7: Set Relationships and Common Elements")
+    print("Set 1:", set1)
+    print("Set 2:", set2)
+    print("Set 3:", set3)
+
+    # Check if set2 is a subset of set1 (all elements of set2 are in set1)
+    print("Is Set 2 a subset of Set 1?", set2.issubset(set1))
+
+    # Check if set1 is a superset of set2 (set1 contains all elements of set2)
+    print("Is Set 1 a superset of Set 2?", set1.issuperset(set2))
+
+    # Check if two sets are disjoint (have no common elements)
+    print("Are Set 1 and Set 3 disjoint?", set1.isdisjoint(set3))
+
+    # Find common elements between multiple sets
+    common_elements = set1 & set2 & set3
+    print("Common elements in all three sets:", common_elements)
+
+    # Find elements common to set1 and set3
+    common_1_3 = set1.intersection(set3)
+    print("Common elements between Set 1 and Set 3:", common_1_3)
+
+    # Find all unique elements across all sets
+    all_elements = set1 | set2 | set3
+    print("All unique elements across sets:", all_elements)
+    print()
+
+
 # Main function to run all programs
-# This allows us to execute all 5 examples in one file.
+# This allows us to execute all 7 examples in one file.
 def main():
     program_1_basic_set()
     program_2_set_operations()
     program_3_set_math()
     program_4_membership_loop()
     program_5_remove_duplicates()
+    program_6_advanced_operations()
+    program_7_set_relationships()
 
 
 # Run the main function when the file is executed

@@ -57,7 +57,7 @@ This repository contains simple Python examples demonstrating how to use tuples 
 
 ## 🧩 Set Programs
 
-- [set.py](set.py): contains 5 beginner-friendly set programs:
+- [set.py](set.py): contains 7 beginner-friendly set programs:
 
   **Program 1: Basic Set Creation**
   - Create a set of items
@@ -83,6 +83,21 @@ This repository contains simple Python examples demonstrating how to use tuples 
   - Convert a list into a set to remove duplicates
   - Display both the original and unique values
   - Sort the unique values using `sorted()`
+
+  **Program 6: Advanced Set Operations**
+  - Create copies of sets using `copy()`
+  - Remove arbitrary items using `pop()` method
+  - Safely remove items using `discard()` without raising errors
+  - Empty entire set using `clear()` method
+  - Understand the difference between `remove()` and `discard()`
+
+  **Program 7: Set Relationships and Common Elements**
+  - Check if a set is a subset using `issubset()`
+  - Check if a set is a superset using `issuperset()`
+  - Determine if sets are disjoint using `isdisjoint()`
+  - Find common elements between multiple sets
+  - Use `intersection()` method to find shared elements
+  - Combine all unique elements across multiple sets
 
 ## 🚀 Running the Scripts
 
